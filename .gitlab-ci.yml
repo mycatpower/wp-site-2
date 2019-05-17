@@ -1,0 +1,5 @@
+mlanding_deploy:
+    script:
+        - cd $PROJECT_PATH && sudo -u www-data -H git pull
+    only:
+        - develop

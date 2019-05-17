@@ -1,0 +1,55 @@
+html,
+body {
+  font-family: $base-font;
+  line-height: 1;
+  background-color: #F3F3F3;
+  font-weight: normal;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+button,
+a {
+  transition: $transition;
+  text-decoration: none;
+
+  &:hover  {
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.container {
+  width: 1300px;
+  max-width: 100%;
+  padding: 0 30px;
+
+  &-fluid {
+    padding: 0 30px;
+  }
+
+  &.container-small {
+    width: 990px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 0 15px;
+
+    &-fluid {
+      padding: 0 15px;
+    }
+  }
+}
